@@ -1,0 +1,6 @@
+__pycache__
+temp/*
+input/*
+ouput/*
+.env
+notes.md
