@@ -1,6 +1,6 @@
 __pycache__
-temp/*
-input/*
-output/*
+temp/
+input/
+output/
 .env
 notes.md
