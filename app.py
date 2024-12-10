@@ -3,8 +3,6 @@ import os
 from pathlib import Path
 import utils
 
-
-
 def main():
     # Load environment variables from .env file
     load_dotenv()
@@ -26,7 +24,8 @@ def main():
 
     ASPECT_RATIOS = ["9-16", "1-1"]
     ASPECT_RATIO = os.getenv("ASPECT_RATIO", "9-16")
-
+    
+    # Perform video processing
     utils.process_video_urls(INPUT_DIR, DOWNLOAD_URLS, VIDEO_URLS, TEMP_DIR, PROJECT_DIR, ASPECT_RATIOS)
     utils.clip_and_concat_videos(INPUT_DIR, ASPECT_RATIO, OUTPUT_DURATION, TEMP_DIR, OUTPUT_DIR)
 
